@@ -1,0 +1,67 @@
+<html>
+
+<body>
+ 
+    <style>
+        #stage {
+            width: 350px;
+            height: 400px;
+            padding: 20px;
+            cursor: pointer;
+        }
+
+        #stage span {
+            width: 32%;
+            display: inline-grid;
+            background-color: black;
+            color: white;
+            margin-bottom: 3px;
+            font-family: monospace;
+            font-size: 5em;
+            text-align: center;
+            border-radius: 0.5rem;
+        }
+        .hide{
+            display: none
+        }
+        .show{
+            display: block;
+        }
+
+    </style>
+
+<div class="control">
+        <button class="one-player">One Player</button>
+        <button>Two Players</button>
+</div>
+
+
+
+    <div class="play hide">
+            <h3>Player One : </h3>
+            <p>please enter your name </p>
+            <input type="text" name="user-one">
+            <button type="text" class="next">Next</button>
+    </div>
+
+     
+    <div id="stage" class="hide">
+        <button id="reset">reset</button>
+        <p id="message"></p>
+
+        <span id="0">&nbsp;</span>
+        <span id="1">&nbsp;</span>
+        <span id="2">&nbsp;</span>
+
+        <span id="3">&nbsp;</span>
+        <span id="4">&nbsp;</span>
+        <span id="5">&nbsp;</span>
+
+        <span id="6">&nbsp;</span>
+        <span id="7">&nbsp;</span>
+        <span id="8">&nbsp;</span>
+    </div>
+
+</body>
+<script src="/dist/tic-tac-toc.js"></script>
+</html>
